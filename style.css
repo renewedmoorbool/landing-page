@@ -1,78 +1,124 @@
-html, body {
+body, html {
+    padding: 0;
     margin: 0;
 }
 
-
-h1 {
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-#header {
-    background-color: #1F2937;
+.header {
+    background: #1F2937;
     color: white;
+    padding: 20px;
 }
 
-.menu {
+.first-line {
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
-}
-
-.logo {
-    margin-top: 15px;
-}
-
-
-.links {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
 }
 
 ul {
     list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-.content {
+.container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 50px;
 }
 
-.boxes {
+.img-holder {
+    background-color: rgb(139, 132, 132);
+    width: 700px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-
 }
-.boxes .card {
+
+#sign-me-up {
+    background-color: #3882F6;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 80px;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
     border: 5px solid #3882F6;
     border-radius: 10px;
-    width: 200px;
-    height: 200px;
 }
 
-.boxes div {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 25px;
-}
-
-.boxes img {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-}
-
-.quote {
+.grey-section {
+    margin-top: 50px;
     background-color: #E5E7EB;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 36px;
-    color: #1F2937;
+}
+
+.grey-section p {
+    width: 700px;
+}
+
+.cta-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.call-to-action {
+    margin-top: 50px;
+    background-color: #3882F6;
+    border-radius: 5px;
+    color: white;
+    width: 1200px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    gap: 50px;
+}
+
+.cta-sentences {
+    display: flex;
     flex-direction: column;
-    margin-top: 80px;
-    margin-bottom: 400px;
-    padding: 50px;
+}
+
+.cta-sentences p {
+    margin-top: -20px;
+}
+
+.cta-button {
+    background-color: #3882F6;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    width: 100px;
+    flex: 0.5;   
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #1F2937;
+    color: white;
+    height: 100px;
 }
